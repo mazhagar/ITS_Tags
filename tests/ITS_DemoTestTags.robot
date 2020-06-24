@@ -67,7 +67,7 @@ ITS_SmokeTest
 	${ORDERID}	GetText		Your Order ID is	between=???
 	LogScreenshot
 ITS_RegressionTest
-  [tags]              regression
+   	[tags]              regression
 	Appstate       	    Frontpage
 	LogScreenshot
 	HoverText      	    Chemicals
@@ -149,20 +149,15 @@ ITS_RegressionTest
 	${ORDERID}	GetText		Your Order ID is	between=???
 	LogScreenshot
 ITS_SanityTest
-  ITS_HomePage
-    [tags]              sanity
+   	[tags]              sanity
 	Appstate       	    Frontpage
 	LogScreenshot
 	HoverText      	    Chemicals
 	ClickText      	    Pool Algaecides
-
-  Apstate       	    Frontpage
 	HoverText      	    Chemicals
 	ClickText      	    Pool Algaecides
 	LogScreenshot
 	ClickText           In The Swim Pool Algaecide
-
-
 	# Verify that quantity for item Y1004 is 1.. Use item nro as anchor
 	VerifyInputValue    QTY:            1       anchor=Y1004
 	# Buy 10 and add to cart:
