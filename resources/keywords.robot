@@ -18,6 +18,8 @@ Setup Browser
 End suite
     Close All Browsers
     Sleep    2
+Example Test
+	[tags]		smoke
 
 Appstate
 	[Documentation]    Appstate handler
