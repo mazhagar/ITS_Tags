@@ -13,13 +13,13 @@ ${AddToCartButton_Quick}	Add to cart
 *** Keywords ***
 Setup Browser
     Open Browser    about:blank    ${BROWSER}
-    
+    [tags]		smoke
 	
 End suite
     Close All Browsers
     Sleep    2
 Example Test
-	[tags]		smoke
+	
 
 Appstate
 	[Documentation]    Appstate handler
