@@ -10,7 +10,7 @@ Suite Teardown       End suite
 ITS_SmokeTest
 	[tags]            smoke
 	Appstate       	    FrontPage
-	LogScreenshot   C:/Users/Maari/Desktop/Qen_Screenshot/screenshot_123.png
+	#LogScreenshot   C:/Users/Maari/Desktop/Qen_Screenshot/screenshot_123.png
 	ClickText      	    ${Mini_Quick}
 	TypeText	quantity	3
 	TypeText	skuId		${ItemNumber_Quick}
