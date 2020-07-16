@@ -42,7 +42,7 @@ ITS_SmokeTest
 	TypeText           Zip/Postal Code  55632
 	ClickCheckbox		shippingAddressAsBilling		on
 	VerifyCheckboxValue	shippingAddressAsBilling		on
-	ClickText	Public Pool – Hotel, Motel, Apartment Complex, etc.
+	ClickText	Hotel, Motel, Apartment Complex
 	TypeText         Telephone        1234567890
 	
 	ClickElement	//*[@id\="its_store_checkoutShippingAddress"]/div[14]/div[3]/div[2]/span[3]/input[1]
