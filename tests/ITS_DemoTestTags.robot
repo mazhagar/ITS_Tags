@@ -8,14 +8,13 @@ Suite Teardown       End suite
 *** Test Cases ***
 
 ITS_SmokeTest
-	: FOR    ${i}    IN RANGE	1	3
-       
+	[tags]            testgen	nwise=2       
 	[tags]            smoke
 	
 	Appstate       	    FrontPage
 	#LogScreenshot   C:/Users/Maari/Desktop/Qen_Screenshot/screenshot_123.png
 	ClickText      	    ${Mini_Quick}
-	TypeText	quantity	3
+	TypeText	quantity	[3, 10]
 	TypeText	skuId		${ItemNumber_Quick}
 	ClickText	${AddToCartButton_Quick}
 	#Paypal Checkout
@@ -74,6 +73,7 @@ ITS_SmokeTest
 	${ORDERID}	GetText		Your Order ID is	between=???
 	LogScreenshot
 ITS_RegressionTest
+	[tags]            testgen	nwise=3
    	[tags]              regression
 	Appstate       	    Frontpage
 	LogScreenshot
@@ -114,7 +114,7 @@ ITS_RegressionTest
 	ClickText           CHECK OUT
 	LogScreenshot
 	ClickText           GUEST CHECKOUT
-	TypeText	First Name	ITS
+	TypeText	First Name	[ITS, Test, Sample]
 	TypeText	Last Name	TEST
 	TypeText	Email	qentineltest01@mail.com
 	# Switch checkbox to off
