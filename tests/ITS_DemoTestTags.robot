@@ -70,7 +70,7 @@ ITS_SmokeTest
 	ClickText	PLACE ORDER
 	VerifyTexts	Thank you for your order!
 	${ORDERID}	GetText		Your Order ID is	between=???
-	FOR    ${element}    IN    ${ORDERID}
+	FOR    ${element}    IN    ${MaxElement}
         Start Element    ${element}
     	END
 	LogScreenshot
