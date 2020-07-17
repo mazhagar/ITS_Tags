@@ -8,8 +8,8 @@ Suite Teardown       End suite
 *** Test Cases ***
 
 ITS_SmokeTest
-	[tags]            testgen	nwise=2       
 	[tags]            smoke
+	[Tags]            testgen	nwise=2       
 	
 	Appstate       	    FrontPage
 	#LogScreenshot   C:/Users/Maari/Desktop/Qen_Screenshot/screenshot_123.png
@@ -73,8 +73,9 @@ ITS_SmokeTest
 	${ORDERID}	GetText		Your Order ID is	between=???
 	LogScreenshot
 ITS_RegressionTest
-	[tags]            testgen	nwise=3
+	
    	[tags]              regression
+	[Tags]            testgen	nwise=3
 	Appstate       	    Frontpage
 	LogScreenshot
 	HoverText      	    Chemicals
