@@ -75,7 +75,7 @@ ITS_SmokeTest
 ITS_RegressionTest
 	
    	[tags]              regression
-	[Tags]            testgen	nwise=3
+	#[Tags]            testgen	nwise=3
 	Appstate       	    Frontpage
 	LogScreenshot
 	HoverText      	    Chemicals
