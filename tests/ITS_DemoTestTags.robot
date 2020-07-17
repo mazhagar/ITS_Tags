@@ -8,6 +8,8 @@ Suite Teardown       End suite
 *** Test Cases ***
 
 ITS_SmokeTest
+	: FOR    ${i}    IN RANGE	1	3
+       
 	[tags]            smoke
 	
 	Appstate       	    FrontPage
@@ -70,9 +72,6 @@ ITS_SmokeTest
 	ClickText	PLACE ORDER
 	VerifyTexts	Thank you for your order!
 	${ORDERID}	GetText		Your Order ID is	between=???
-	FOR    ${element}    IN    ${MaxElement}
-        Start Element    ${element}
-    	END
 	LogScreenshot
 ITS_RegressionTest
    	[tags]              regression
