@@ -9,6 +9,7 @@ Suite Teardown       End suite
 
 ITS_SmokeTest
 	[tags]            smoke
+	
 	Appstate       	    FrontPage
 	#LogScreenshot   C:/Users/Maari/Desktop/Qen_Screenshot/screenshot_123.png
 	ClickText      	    ${Mini_Quick}
@@ -68,7 +69,10 @@ ITS_SmokeTest
 	#ShouldBeEqual	${Order_TOTAL} ==	${SubTotal}+${Shipping}+${Handling}+${EstimateTax}
 	ClickText	PLACE ORDER
 	VerifyTexts	Thank you for your order!
-	${ORDERID}	GetText		Your Order ID is	between=???
+	@{ORDERID}	GetText		Your Order ID is	between=???
+	FOR    ${element}    IN    @{ORDERID}
+        Start Element    ${element}
+    	END
 	LogScreenshot
 ITS_RegressionTest
    	[tags]              regression
