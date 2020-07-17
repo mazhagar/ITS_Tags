@@ -8,11 +8,11 @@ Suite Teardown       End suite
 *** Test Cases ***
 
 ITS_SmokeTest
-	#[tags]            smoke
-	[Tags]            testgen	nwise=2       
+	[tags]            smoke
+	#[Tags]            testgen	nwise=2       
 	
 	Appstate       	    FrontPage
-	#LogScreenshot   C:/Users/Maari/Desktop/Qen_Screenshot/screenshot_123.png
+	LogScreenshot   /dss/screenshot_123.png
 	ClickText      	    ${Mini_Quick}
 	TypeText	quantity	[3, 10]
 	TypeText	skuId		${ItemNumber_Quick}
