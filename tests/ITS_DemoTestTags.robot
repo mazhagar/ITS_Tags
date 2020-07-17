@@ -69,8 +69,8 @@ ITS_SmokeTest
 	#ShouldBeEqual	${Order_TOTAL} ==	${SubTotal}+${Shipping}+${Handling}+${EstimateTax}
 	ClickText	PLACE ORDER
 	VerifyTexts	Thank you for your order!
-	@{ORDERID}	GetText		Your Order ID is	between=???
-	FOR    ${element}    IN    @{ORDERID}
+	${ORDERID}	GetText		Your Order ID is	between=???
+	FOR    ${element}    IN    ${ORDERID}
         Start Element    ${element}
     	END
 	LogScreenshot
