@@ -8,7 +8,7 @@ Suite Teardown       End suite
 *** Test Cases ***
 
 ITS_SmokeTest
-	[tags]            smoke
+	#[tags]            smoke
 	[Tags]            testgen	nwise=2       
 	
 	Appstate       	    FrontPage
@@ -74,8 +74,8 @@ ITS_SmokeTest
 	LogScreenshot
 ITS_RegressionTest
 	
-   	[tags]              regression
-	#[Tags]            testgen	nwise=3
+   	#[tags]              regression
+	[tags]            testgen	nwise=3
 	Appstate       	    Frontpage
 	LogScreenshot
 	HoverText      	    Chemicals
