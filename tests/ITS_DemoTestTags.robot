@@ -8,8 +8,7 @@ Suite Teardown       End suite
 *** Test Cases ***
 
 ITS_SmokeTest
-	[tags]            smoke
-	#[Tags]            testgen	nwise=2       
+	[tags]            smoke,testgen	nwise=2       
 	
 	Appstate       	    FrontPage
 	LogScreenshot		screenshot_123.png
@@ -157,7 +156,8 @@ ITS_RegressionTest
 	${ORDERID}	GetText		Your Order ID is	between=???
 	LogScreenshot
 ITS_SanityTest
-   	[tags]              sanity
+#   	[tags]              sanity
+   	[tags]              	testgen	nwise=3
 	Appstate       	    Frontpage
 	LogScreenshot
 	HoverText      	    Chemicals
