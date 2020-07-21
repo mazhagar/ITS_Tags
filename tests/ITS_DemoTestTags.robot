@@ -8,7 +8,7 @@ Suite Teardown       End suite
 *** Test Cases ***
 
 ITS_SmokeTest
-	[tags]            smoke,testgen	nwise=2       
+	[tags]     testgen	nwise=2       
 	
 	Appstate       	    FrontPage
 	LogScreenshot		screenshot_123.png
